@@ -19,7 +19,7 @@ bWAPP is licensed under a Creative Commons Attribution-NonCommercial-NoDerivativ
 // Database connection settings
 $db_server = "localhost";
 $db_username = "root";
-$db_password = "";
+$db_password = "nets1038";
 $db_name = "bWAPP";
 
 // SQLite database name
