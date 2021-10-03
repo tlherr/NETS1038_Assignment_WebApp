@@ -45,6 +45,17 @@ No! I will not explain how to install Apache/IIS, PHP and MySQL :)
 		chmod 777 documents/
 		chmod 777 logs/
 
+
+Generate Self Signed Certificate 
+
+# cd /etc/pki/tls/certs
+# openssl genrsa -aes256 2048 > server_pw.key 
+# openssl rsa -in server_pw.key -out server.key 
+# openssl req -utf8 -new -key server.key -out server.csr 
+# openssl x509 -in server.csr -out server.crt -req -signkey server.key -days 3650 
+# chmod 600 server.key 
+
+
 */ Edit the file 'admin/settings.php' with your own database connection settings.
 
 	example:
